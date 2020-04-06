@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react"
 import axios from "axios"
 
+import "./index.scss"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Searchbar from "../components/search-bar"
@@ -45,6 +47,22 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
+      <div className="coffee" style={{ textAlign: "center" }}>
+        <a
+          className="bmc-button"
+          target="_blank"
+          href="https://www.buymeacoffee.com/pkuttiya"
+        >
+          <img
+            src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg"
+            alt="Buy me a mask"
+          />
+          <span style={{ marginLeft: "15px", fontSize: "19px !important" }}>
+            Buy me a mask
+          </span>
+        </a>
+      </div>
+
       <Searchbar handleChange={handleChange} />
       <Summary summary={summaryData} />
       <Table data={cityData} summary={summaryData} />
