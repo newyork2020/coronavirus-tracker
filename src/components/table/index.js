@@ -28,7 +28,7 @@ const Table = ({ data, summary = [] }) => {
     "total test",
     "positive",
   ]
-  console.log("table body", data)
+
   return (
     <>
       <table>
