@@ -13,7 +13,7 @@ import "./layout.css"
 const Layout = ({ children }) => {
   return (
     <>
-      <Header siteTitle="Sepnewyork Covid-19 Tracker" />
+      <Header siteTitle="New York City Covid-19 Tracker" />
       <div
         style={{
           margin: `0 auto`,
