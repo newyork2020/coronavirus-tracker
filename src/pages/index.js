@@ -47,7 +47,10 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO title="Home" />
-      <div className="coffee" style={{ textAlign: "center" }}>
+      <div
+        className="coffee"
+        style={{ textAlign: "center", marginBottom: "1.5em" }}
+      >
         <a
           className="bmc-button"
           target="_blank"
